@@ -1,4 +1,6 @@
 import React, { Fragment, useState } from "react";
+import axios from "axios";
+import { Link } from "react-router-dom";
 
 export const Register = () => {
     const [registerData, setRegisterData] = useState({
@@ -13,14 +15,14 @@ export const Register = () => {
     const onChange = (e) =>
         setRegisterData({ ...registerData, [e.target.name]: e.target.value });
 
-    const onSubmit = e => {
-        e.preventDefault()
+    const onSubmit = async (e) => {
+        e.preventDefault();
         if (password !== password2) {
-            console.log("Passwords do not match")   
+            console.log("Passwords do not match");
         } else {
-            console.log(registerData)
+            console.log("success");
         }
-    }
+    };
 
     return (
         <Fragment>
@@ -48,10 +50,6 @@ export const Register = () => {
                         onChange={(e) => onChange(e)}
                         required
                     />
-                    <small className="form-text">
-                        This site uses Gravatar so if you want a profile image,
-                        use a Gravatar email
-                    </small>
                 </div>
                 <div className="form-group">
                     <input
@@ -82,7 +80,7 @@ export const Register = () => {
                 />
             </form>
             <p className="my-1">
-                Already have an account? <a href="login.html">Sign In</a>
+                Already have an account? <Link to="/login">Sign In</Link>
             </p>
         </Fragment>
     );
