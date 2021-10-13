@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { setAlert } from "../../actions/alert";
 import PropTypes from "prop-types";
 
-const Register = ({setAlert}) => {
+const Register = ({ setAlert }) => {
     const [registerData, setRegisterData] = useState({
         name: "",
         email: "",
