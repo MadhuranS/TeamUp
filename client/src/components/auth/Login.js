@@ -1,8 +1,7 @@
 import React, { Fragment, useState } from "react";
-import axios from "axios";
 import { Link } from "react-router-dom";
 
-export const Login = () => {
+const Login = () => {
     const [loginData, setLoginData] = useState({
         email: "",
         password: "",
@@ -58,3 +57,5 @@ export const Login = () => {
         </Fragment>
     );
 };
+
+export default Login
