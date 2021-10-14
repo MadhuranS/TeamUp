@@ -21,12 +21,9 @@ const Login = ({ login, isAuthenticated }) => {
     };
 
     //redirect if logged in
-    console.log("hi", isAuthenticated);
     if (isAuthenticated) {
-        console.log("test");
         return <Redirect to="/dashboard" />;
     }
-    console.log("bye");
 
     return (
         <Fragment>
