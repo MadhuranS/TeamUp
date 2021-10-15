@@ -1,10 +1,11 @@
 import React from "react";
-import {  Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import Register from "../auth/Register";
 import Login from "../auth/Login";
 import Alert from "../layouts/Alert";
 import Dashboard from "../dashboard/Dashboard";
 import PrivateRoute from "../routing/PrivateRoute";
+import CreateProfile from "../profile-form/CreateProfile";
 
 const Routes = () => {
     return (
@@ -17,6 +18,11 @@ const Routes = () => {
                     exact
                     path="/dashboard"
                     component={Dashboard}
+                ></PrivateRoute>
+                <PrivateRoute
+                    exact
+                    path="/create-profile"
+                    component={CreateProfile}
                 ></PrivateRoute>
             </Switch>
         </section>
