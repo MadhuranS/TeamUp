@@ -6,7 +6,7 @@ import { Provider } from "react-redux";
 import store from "./store";
 import { loadUser } from "./actions/auth";
 import Routes from "./components/routing/Routes";
-import CreateProfile from "./components/profile-form/CreateProfile";
+
 
 import "./App.css";
 
