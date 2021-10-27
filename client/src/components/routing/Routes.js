@@ -5,7 +5,8 @@ import Login from "../auth/Login";
 import Alert from "../layouts/Alert";
 import Dashboard from "../dashboard/Dashboard";
 import PrivateRoute from "../routing/PrivateRoute";
-import CreateProfile from "../profile-form/CreateProfile";
+import CreateProfile from "../profile-forms/CreateProfile";
+import EditProfile from "../profile-forms/EditProfile";
 
 const Routes = () => {
     return (
@@ -23,6 +24,11 @@ const Routes = () => {
                     exact
                     path="/create-profile"
                     component={CreateProfile}
+                ></PrivateRoute>
+                <PrivateRoute
+                    exact
+                    path="/edit-profile"
+                    component={EditProfile}
                 ></PrivateRoute>
             </Switch>
         </section>
