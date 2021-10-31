@@ -13,7 +13,7 @@ const Dashboard = ({
     getCurrentProfile,
     auth: { user },
     profile: { profile, loading },
-    deleteAccount
+    deleteAccount,
 }) => {
     useEffect(() => {
         getCurrentProfile();
@@ -68,4 +68,6 @@ const mapStateToProps = (state) => ({
     profile: state.profile,
 });
 
-export default connect(mapStateToProps, { getCurrentProfile, deleteAccount })(Dashboard);
+export default connect(mapStateToProps, { getCurrentProfile, deleteAccount })(
+    Dashboard
+);
