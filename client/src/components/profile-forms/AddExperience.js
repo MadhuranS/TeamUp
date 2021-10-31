@@ -1,5 +1,4 @@
 import React, { Fragment, useState } from "react";
-import { Link, withRouter } from "react-router-dom";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { addExperience } from "../../actions/profile";
@@ -84,7 +83,11 @@ const AddExperience = ({ addExperience, history }) => {
                             value={current}
                             checked={current}
                             onChange={(e) => {
-                                setFormData({ ...formData, to:'', current: !current });
+                                setFormData({
+                                    ...formData,
+                                    to: "",
+                                    current: !current,
+                                });
                                 toggleDisabled(!toDateDisabled);
                             }}
                         />{" "}

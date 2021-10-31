@@ -3,10 +3,9 @@ import { setAlert } from "./alert";
 import {
     GET_PROFILE,
     PROFILE_ERROR,
-    SET_ALERT,
     UPDATE_PROFILE,
     ACCOUNT_DELETED,
-    CLEAR_PROFILE
+    CLEAR_PROFILE,
 } from "./types";
 
 //Get current users profile
@@ -182,7 +181,7 @@ export const deleteAccount = (id) => async (dispatch) => {
     if (window.confirm("Are you sure? This cannot be undone!")) {
     }
     try {
-        const res = await axios.delete(`/api/profile`);
+        await axios.delete(`/api/profile`);
         dispatch({
             type: CLEAR_PROFILE,
         });
