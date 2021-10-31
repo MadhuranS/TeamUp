@@ -7,6 +7,8 @@ import Dashboard from "../dashboard/Dashboard";
 import PrivateRoute from "../routing/PrivateRoute";
 import CreateProfile from "../profile-forms/CreateProfile";
 import EditProfile from "../profile-forms/EditProfile";
+import AddExperience from "../profile-forms/AddExperience";
+import AddEducation from "../profile-forms/AddEducation";
 
 const Routes = () => {
     return (
@@ -29,6 +31,16 @@ const Routes = () => {
                     exact
                     path="/edit-profile"
                     component={EditProfile}
+                ></PrivateRoute>
+                <PrivateRoute
+                    exact
+                    path="/add-experience"
+                    component={AddExperience}
+                ></PrivateRoute>
+                <PrivateRoute
+                    exact
+                    path="/add-education"
+                    component={AddEducation}
                 ></PrivateRoute>
             </Switch>
         </section>
