@@ -8,6 +8,7 @@ import ProfileTop from "./ProfileTop";
 import ProfileAbout from "./ProfileAbout";
 import ProfileExperience from "./ProfileExperience";
 import ProfileEducation from "./ProfileEducation";
+import ProfileGithub from "./ProfileGithub";
 
 const Profile = ({
     getProfile,
@@ -15,13 +16,9 @@ const Profile = ({
     auth,
     match,
 }) => {
-    useEffect(
-        () => {
-            getProfile(match.params.id);
-        },
-        [getProfile],
-        match.params.id
-    );
+    useEffect(() => {
+        getProfile(match.params.id);
+    }, [getProfile, match.params.id]);
     return (
         <Fragment>
             {profile === null || loading ? (
@@ -71,6 +68,12 @@ const Profile = ({
                                 <h4>No Education credentials</h4>
                             )}
                         </div>
+
+                        {profile.githubusername && (
+                            <ProfileGithub
+                                username={profile.githubusername}
+                            ></ProfileGithub>
+                        )}
                     </div>
                 </Fragment>
             )}
