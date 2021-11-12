@@ -6,8 +6,8 @@ import Spinner from "../layouts/Spinner";
 
 const Posts = ({ getPosts, post: { posts, loading } }) => {
     useEffect(() => {
-        getPosts()
-    }, [getPosts])
+        getPosts();
+    }, [getPosts]);
     return <div></div>;
 };
 
