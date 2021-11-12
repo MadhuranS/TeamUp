@@ -5,7 +5,6 @@ import { getGithubRepos } from "../../actions/profile";
 import Spinner from "../layouts/Spinner";
 
 const ProfileGithub = ({ username, getGithubRepos, repos }) => {
-    console.log("repo test", repos);
     useEffect(() => {
         getGithubRepos(username);
     }, [getGithubRepos, username]);
@@ -18,7 +17,8 @@ const ProfileGithub = ({ username, getGithubRepos, repos }) => {
                 </Spinner>
             ) : (
                 repos.map((repo) => (
-                    <div key={repos._id} className="repo bg-white p-1 my-1">
+                    
+                    <div key={repo.id} className="repo bg-white p-1 my-1">
                         <div>
                             <h4>
                                 <a
