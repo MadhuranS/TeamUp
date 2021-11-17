@@ -12,6 +12,7 @@ import AddEducation from "../profile-forms/AddEducation";
 import Profiles from "../profiles/Profiles";
 import Profile from "../profile/Profile";
 import Posts from "../posts/Posts";
+import Post from "../post/Post";
 
 const Routes = () => {
     return (
@@ -51,6 +52,11 @@ const Routes = () => {
                     exact
                     path="/posts"
                     component={Posts}
+                ></PrivateRoute>
+                <PrivateRoute
+                    exact
+                    path="/posts/:id"
+                    component={Post}
                 ></PrivateRoute>
             </Switch>
         </section>
