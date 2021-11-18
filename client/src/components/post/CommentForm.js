@@ -13,7 +13,6 @@ const CommentForm = ({ postId, addComment }) => {
             <form
                 onSubmit={(e) => {
                     e.preventDefault();
-                    console.log(text)
                     addComment(postId, { text });
                     setText("");
                 }}
