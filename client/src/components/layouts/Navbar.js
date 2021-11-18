@@ -34,9 +34,6 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
                 <Link to="/profiles">Members</Link>
             </li>
             <li>
-                <a href="#!">Students</a>
-            </li>
-            <li>
                 <Link to="/register">Register</Link>
             </li>
             <li>
