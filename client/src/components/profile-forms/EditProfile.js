@@ -49,7 +49,7 @@ const EditProfile = ({
         location,
         status,
         skills,
-        githubusername,
+        //githubusername,
         bio,
         twitter,
         facebook,
@@ -81,38 +81,35 @@ const EditProfile = ({
                         value={status}
                         onChange={(e) => onChange(e)}
                     >
-                        <option value="0">* Select Professional Status</option>
-                        <option value="Developer">Developer</option>
-                        <option value="Junior Developer">
-                            Junior Developer
+                        <option value="0">* Select Status</option>
+
+                        <option value="Undergrad Student">
+                            Undergrad Student
                         </option>
-                        <option value="Senior Developer">
-                            Senior Developer
+                        <option value="College Student">College Student</option>
+                        <option value="Masters Student">Masters Student</option>
+                        <option value="PhD Student">PhD Student</option>
+                        <option value="High School Student">
+                            High School Student
                         </option>
-                        <option value="Manager">Manager</option>
-                        <option value="Student or Learning">
-                            Student or Learning
-                        </option>
-                        <option value="Instructor">
-                            Instructor or Teacher
-                        </option>
-                        <option value="Intern">Intern</option>
+                        <option value="On Internship">On Internship</option>
+                        <option value="New Grad">New Grad</option>
                         <option value="Other">Other</option>
                     </select>
                     <small className="form-text">
-                        Give us an idea of where you are at in your career
+                        Give us an idea of what you're doing right now
                     </small>
                 </div>
                 <div className="form-group">
                     <input
                         type="text"
-                        placeholder="Company"
+                        placeholder="Company/School"
                         name="company"
                         value={company}
                         onChange={(e) => onChange(e)}
                     />
                     <small className="form-text">
-                        Could be your own company or one you work for
+                        Company you work for or School you study at
                     </small>
                 </div>
                 <div className="form-group">
@@ -152,7 +149,7 @@ const EditProfile = ({
                         HTML,CSS,JavaScript,PHP)
                     </small>
                 </div>
-                <div className="form-group">
+                {/* <div className="form-group">
                     <input
                         type="text"
                         placeholder="Github Username"
@@ -164,7 +161,7 @@ const EditProfile = ({
                         If you want your latest repos and a Github link, include
                         your username
                     </small>
-                </div>
+                </div> */}
                 <div className="form-group">
                     <textarea
                         placeholder="A short bio of yourself"

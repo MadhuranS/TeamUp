@@ -28,7 +28,7 @@ const CreateProfile = ({ createProfile, history }) => {
         location,
         status,
         skills,
-        githubusername,
+        // githubusername,
         bio,
         twitter,
         facebook,
@@ -61,21 +61,18 @@ const CreateProfile = ({ createProfile, history }) => {
                         onChange={(e) => onChange(e)}
                     >
                         <option value="0">* Select Professional Status</option>
-                        <option value="Developer">Developer</option>
-                        <option value="Junior Developer">
-                            Junior Developer
+
+                        <option value="Undergrad Student">
+                            Undergrad Student
                         </option>
-                        <option value="Senior Developer">
-                            Senior Developer
+                        <option value="College Student">College Student</option>
+                        <option value="Masters Student">Masters Student</option>
+                        <option value="PhD Student">PhD Student</option>
+                        <option value="High School Student">
+                            High School Student
                         </option>
-                        <option value="Manager">Manager</option>
-                        <option value="Student or Learning">
-                            Student or Learning
-                        </option>
-                        <option value="Instructor">
-                            Instructor or Teacher
-                        </option>
-                        <option value="Intern">Intern</option>
+                        <option value="On Internship">On Internship</option>
+                        <option value="New Grad">New Grad</option>
                         <option value="Other">Other</option>
                     </select>
                     <small className="form-text">
@@ -131,7 +128,7 @@ const CreateProfile = ({ createProfile, history }) => {
                         HTML,CSS,JavaScript,PHP)
                     </small>
                 </div>
-                <div className="form-group">
+                {/* <div className="form-group">
                     <input
                         type="text"
                         placeholder="Github Username"
@@ -143,7 +140,7 @@ const CreateProfile = ({ createProfile, history }) => {
                         If you want your latest repos and a Github link, include
                         your username
                     </small>
-                </div>
+                </div> */}
                 <div className="form-group">
                     <textarea
                         placeholder="A short bio of yourself"
