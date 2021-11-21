@@ -1,2 +1,2 @@
 # TeamUp
-Social network for students to collaborate (WIP)
+Social network for students to collaborate 
