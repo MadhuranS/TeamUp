@@ -121,7 +121,7 @@ const EditProfile = ({
                         onChange={(e) => onChange(e)}
                     />
                     <small className="form-text">
-                        Could be your own or a company website
+                        Could be a portfolio or personal website
                     </small>
                 </div>
                 <div className="form-group">
@@ -133,7 +133,7 @@ const EditProfile = ({
                         onChange={(e) => onChange(e)}
                     />
                     <small className="form-text">
-                        City & state suggested (eg. Boston, MA)
+                        City & state/province suggested (eg. Toronto, ON)
                     </small>
                 </div>
                 <div className="form-group">
@@ -145,8 +145,8 @@ const EditProfile = ({
                         onChange={(e) => onChange(e)}
                     />
                     <small className="form-text">
-                        Please use comma separated values (eg.
-                        HTML,CSS,JavaScript,PHP)
+                        Please use comma separated values (eg. UI/UX,
+                        Programming languages, Accounting, etc)
                     </small>
                 </div>
                 {/* <div className="form-group">

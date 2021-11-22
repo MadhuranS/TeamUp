@@ -76,7 +76,7 @@ const CreateProfile = ({ createProfile, history }) => {
                         <option value="Other">Other</option>
                     </select>
                     <small className="form-text">
-                        Give us an idea of where you are at in your career
+                        Give us an idea of what you're doing right now
                     </small>
                 </div>
                 <div className="form-group">
@@ -88,7 +88,7 @@ const CreateProfile = ({ createProfile, history }) => {
                         onChange={(e) => onChange(e)}
                     />
                     <small className="form-text">
-                        Could be your own company or one you work for
+                        Company you work for or School you study at
                     </small>
                 </div>
                 <div className="form-group">
@@ -100,7 +100,7 @@ const CreateProfile = ({ createProfile, history }) => {
                         onChange={(e) => onChange(e)}
                     />
                     <small className="form-text">
-                        Could be your own or a company website
+                        Could be a portfolio or personal website
                     </small>
                 </div>
                 <div className="form-group">
@@ -112,7 +112,7 @@ const CreateProfile = ({ createProfile, history }) => {
                         onChange={(e) => onChange(e)}
                     />
                     <small className="form-text">
-                        City & state suggested (eg. Boston, MA)
+                        City & state/province suggested (eg. Toronto, ON)
                     </small>
                 </div>
                 <div className="form-group">
@@ -124,11 +124,11 @@ const CreateProfile = ({ createProfile, history }) => {
                         onChange={(e) => onChange(e)}
                     />
                     <small className="form-text">
-                        Please use comma separated values (eg.
-                        HTML,CSS,JavaScript,PHP)
+                        Please use comma separated values (eg. UI/UX,
+                        Programming languages, Accounting, etc.)
                     </small>
                 </div>
-                {/* <div className="form-group">
+                {/* <div className="form-sgroup">
                     <input
                         type="text"
                         placeholder="Github Username"
@@ -159,7 +159,7 @@ const CreateProfile = ({ createProfile, history }) => {
                         type="button"
                         className="btn btn-light"
                     >
-                        Add Social Network Links
+                        Add Social Network Links 
                     </button>
                     <span>Optional</span>
                 </div>
