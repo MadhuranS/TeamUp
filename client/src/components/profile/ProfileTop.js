@@ -53,13 +53,13 @@ const ProfileTop = ({
                     </a>
                 )}
                 {social && social.youtube && (
-                    <a href="youtube" target="_blank" rel="noopener noreferrer">
+                    <a href={social.youtube} target="_blank" rel="noopener noreferrer">
                         <i className="fab fa-youtube fa-2x"></i>
                     </a>
                 )}
                 {social && social.instagram && (
                     <a
-                        href="social.instagram"
+                        href={social.instagram}
                         target="_blank"
                         rel="noopener noreferrer"
                     >
